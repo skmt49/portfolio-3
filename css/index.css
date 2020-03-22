@@ -1,0 +1,283 @@
+.wrapper{
+  position: relative;
+}
+
+/* about -> */
+.about-wrapper{
+  width: 68.75rem;
+  height: 37.93rem;
+  max-width: 100%;
+  margin: 7.5rem auto 0;
+  position: relative;
+}
+
+.about-img{
+  width: 68.75rem;
+  height: 37.93rem;
+  max-width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.about-img img{
+  width: 100%;
+  height: 37.93rem;
+  object-fit: cover;
+}
+
+.about-title{
+  margin: 3.12rem auto 1.9rem 1.9rem;
+}
+
+.about-contents{
+  width: 36.87rem;
+  height: 24.18rem;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.9rem;
+  margin: auto;
+  z-index: 2;
+}
+
+.about-sentence{
+  width: 33.12rem;
+  margin-left: 1.9rem;
+  font-family: "Noto Sans JP";
+  line-height: 2rem;
+}
+
+.read-me-btn{
+  margin-top: 1.9rem;
+  margin-left: 1.9rem;
+}
+/* works,culture */
+.works-culture-wrapper{
+  width: 100%;
+  height: 50.18rem;
+  background-color: #F0F0F0;
+  margin-top: -6.25rem;
+}
+
+.works-culture-flex{
+  width: 68.75rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 9.25rem;
+  padding-bottom: 3.75rem;
+  margin: 0 auto;
+}
+
+.works-culture-flex section{
+  width: 32.5rem;
+}
+
+.works-culture-img img{
+  width: 100%;
+  height: auto;
+}
+
+.works-culture-sentence{
+  font-family: "Noto Sans JP";
+  margin-top: 1.68rem;
+  margin-bottom: 1.68rem;
+}
+
+/* topics */
+.topics-wrapper{
+  width: 68.75rem;
+  height: 21.75rem;
+  margin: 3.75rem auto;
+}
+
+.topics-contents h2{
+  margin-top: 0;
+  margin-bottom: 1.81rem;
+}
+
+.topic{
+  width: 43.75rem;
+  border-bottom: 1px solid #ddd;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 1.81rem;
+}
+
+.date{
+  font-family: "Montserrat Medium";
+  color: #CECECE;
+  font-size: 0.625rem;
+  margin-bottom: 0.56rem;
+}
+
+.title{
+  font-family: "YuGothic";
+  margin-bottom: 0.62rem;
+}
+
+.topics-btn a{
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* contact */
+.contact-wrapper{
+  height: 35.62rem;
+  background-color: #F0F0F0;
+  padding-top: 3.75rem;
+}
+
+.contact-flex{
+  width: 68.75rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contact{
+  width: 27.5rem;
+  order: 1;
+}
+
+.contact h2{
+  margin-top: 4.5rem;
+}
+
+.contact-img{
+  width: 36.25rem;
+  order: 2;
+}
+
+.contact-img img{
+  width: 100%;
+  height: auto;
+}
+
+.contact-sentence{
+  line-height: 32px;
+  margin-bottom: 1.9rem;
+}
+
+
+
+@media screen and (max-width:768px) {
+  .about-wrapper{
+    margin-top: 5rem;
+  }
+
+  .about-img img{
+    height: 29.93rem;
+  }
+
+  .about-contents{
+    left: 0;
+    right: 0;
+  }
+
+  .about-wrapper,.about-img{
+    height: 29.93rem;
+  }
+
+  .works-culture-wrapper{
+    height: 87.62rem;
+  }
+
+  .works-culture-flex{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .culture-contents{
+    margin-top: 5rem;
+  }
+
+  .works-culture-flex section{
+    margin-left: 1.9rem;
+  }
+
+  .topics-wrapper{
+    width: 43.75rem;
+    height: 21.75rem;
+    margin: 1.87rem auto;
+  }
+
+  .topics-btn a{
+    margin-left: 0;
+  }
+
+  .contact-wrapper{
+    height: 46.68rem;
+  }
+
+  .contact-flex{
+    width: 32.5rem;
+    flex-direction: column;
+    margin-left: 1.9rem;
+  }
+
+  .contact{
+    order: 2;
+  }
+
+  .contact h2{
+    margin-top: 1.9rem;
+  }
+
+  .contact-img{
+    order: 1;
+  }
+
+}
+@media screen and (max-width:375px) {
+  .about-wrapper,.about-img,.about-img img{
+    height: 38.64rem;
+  }
+  .about-contents{
+    width: 24.64rem;
+    height: 31.5rem;
+  }
+
+  .about-sentence{
+    width: 21.42rem;
+  }
+
+  .works-culture-wrapper{
+    height: 76.78rem;
+  }
+
+  .works-culture-flex section{
+    width: 24.64rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .topics-wrapper{
+    width: 24.64rem;
+  }
+
+  .topic{
+    width: 100%;
+  }
+
+  .title{
+    font-size: 0.71rem;
+  }
+
+  .contact-wrapper{
+    height: 44.42rem;
+  }
+
+  .contact-flex{
+    width: 24.64rem;
+    margin-left: auto;
+  }
+
+  .contact{
+    width: 100%;
+  }
+
+  .contact-img,.contact-sentence{
+    width: 24.64rem;
+  }
+}

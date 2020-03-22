@@ -1,0 +1,384 @@
+
+html{
+  /* font-size: 14px */
+  font-family: "Noto Serif","Noto Serif JP";
+  font-size: 1.1vw;
+}
+@media screen and (min-width:375px) and (max-width:768px) {
+  html{
+    /* font-size: 16px; */
+    font-size: 2.08vw;
+  }
+}
+@media screen and (max-width:375px) {
+  html{
+    /* font-size: 14px; */
+    font-size: 3.73vw;
+  }
+}
+
+body{
+  margin: 0;
+}
+
+a{
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p{
+  margin: 0;
+}
+
+.btn a{
+  font-size: 0.75rem;
+  width: 10rem;
+  height: 2.25rem;
+  background-color: #000;
+  line-height: 2.25rem;
+}
+
+.contents-title{
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  color: #333;
+}
+
+header {
+  height: 46.25rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.header-ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 9.56rem;
+}
+
+.header-list-cell{
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+.header-container {
+  height: 74px;
+  display: flex;
+  color: #fff;
+}
+
+.main-bg {
+  width: 68.75rem;
+  height: 40rem;
+  background-image: url(../img/home-img.jpg);
+  background-position:  center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-bg::before {
+  content: '';
+  width: 68.75rem;
+  height: 40rem;
+  opacity: 0.4;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.logo {
+  margin: 0;
+  margin-left: 3.62rem;
+  line-height: 74px;
+}
+
+.logo span{
+  font-size: 1rem;
+}
+
+.motto {
+  width: 18.25rem;
+  color: #fff;
+  margin: 5.18rem 14rem 0 auto;
+
+}
+
+.black-square {
+  width: 48.75rem;
+  height: 46.25rem;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.motto p {
+  margin: 0;
+}
+
+.small-size-motto {
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.large-size-motto {
+  font-size: 4.5rem;
+}
+
+.menu-flex {
+  display: flex;
+  height: 40px;
+  margin-top: 30px;
+  margin-right: 3.62rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: block;
+  margin-right: 0.5rem;
+}
+
+.menu-btn span {
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.menu-btn span:not(.top) {
+  margin-top: 0.5rem;
+}
+
+.menu-btn-close {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 3.62rem;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.menu-btn-close span::before,
+.menu-btn-close span::after {
+  display: block;
+  content: "";
+  width: 2rem;
+  height: 0.4rem;
+  background: #fff;
+  position: absolute;
+  top: 35px;
+}
+
+.menu-btn-close span::before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn-close span::after {
+  transform: rotate(45deg);
+}
+
+.header-list-wrapper{
+  display: none;
+  width: 100%;
+  height: 56.25rem;
+  margin-top: -74px;
+  background: rgba(34,34,34,0.6);
+  position: absolute;
+  transform: translateX(100vw);
+  transition: .3s ease-in-out;
+  z-index: 1;
+}
+
+.header-list {
+  min-width: 520px;
+  width: 32.5rem;
+  height: 56.25rem;
+  background: rgba(34,34,34,0.95);
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.menu-open .header-list-wrapper {
+  display: block;
+    transform: translateX(0);
+}
+
+/* subpage */
+.subpage-main-bg,.subpage-main-bg:before{
+  height: 24.18rem;
+}
+
+.subpage-header,.subpage-black-square{
+  height: 29rem;
+}
+
+.subpage-title-wrapper{
+  text-align: right;
+  margin-top: 5rem;
+  margin-right: 10.62rem;
+}
+
+.subpage-title{
+  display: inline-block;
+  text-align: left;
+  color: #fff;
+}
+
+.en-subpage-title{
+  font-size: 4.5rem;
+  font-weight: bolder;
+}
+
+.ja-subpage-title{
+  font-family: "Noto Sans JP";
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width:768px) {
+   header{
+     height: 64rem;
+   }
+
+  .main-bg {
+    width: 37.5rem;
+    height: 55.62rem;
+    background-size: cover;
+  }
+
+  .main-bg::before {
+    width: 37.5rem;
+    height: 55.62rem;
+  }
+
+  .black-square {
+    width: 35.12rem;
+    height: 64rem;
+  }
+
+  .header-list-wrapper{
+    height: 64rem;
+  }
+
+  .header-list {
+    min-width: 0;
+    max-width: 100%;
+    height: 64rem;
+  }
+
+  .logo{
+    margin-left: 1.9rem;
+  }
+.menu-flex{
+  margin-right: 1.9rem;
+}
+
+.motto{
+  margin-right: 5rem;
+}
+
+.subpage-header{
+  height: 38.43rem;
+}
+
+.subpage-main-bg,.subpage-main-bg:before{
+  width: 36.68rem;
+  height: 33.06rem;
+}
+
+.subpage-black-square{
+  width: 25.37rem;
+  height: 38.43rem;
+}
+
+.subpage-title-wrapper{
+  margin-top: 9.37rem;
+  margin-right: 6.12rem;
+}
+
+.en-subpage-title{
+  font-size: 3.25rem;
+}
+
+.ja-subpage-title{
+  font-size: 1rem;
+}
+}
+
+@media screen and (max-width:375px) {
+  header{
+    height: 41.68rem;
+  }
+
+  .main-bg ,.main-bg:before{
+    width: 17.9rem;
+    height: 36.25rem;
+  }
+
+  .black-square {
+    width: 17.87rem;
+    height: 41.68rem;
+  }
+
+  .header-list-wrapper,.header-list{
+    height: 41.68rem;
+  }
+
+
+  .motto{
+    width: 14.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .small-size-motto{
+    font-size: 1rem;
+  }
+
+  .large-size-motto{
+    font-size: 3.5rem;
+  }
+
+  .subpage-header{
+    height: 32.07rem;
+  }
+
+  .subpage-main-bg,.subpage-main-bg:before{
+    width: 20.5rem;
+    height: 27.64rem;
+  }
+
+  .subpage-black-square{
+    width: 14.14rem;
+    height: 32.07rem;
+  }
+
+  .subpage-title-wrapper{
+    margin-top: 7.14rem;
+    margin-right: 1.9rem;
+  }
+
+  .en-subpage-title{
+    font-size: 3.71rem;
+  }
+
+  .ja-subpage-title{
+    font-size: 1.14rem;
+  }
+}
