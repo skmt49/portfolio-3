@@ -207,7 +207,8 @@ ul{
   background: rgba(34,34,34,0.6);
   position: absolute;
   transform: translateX(100vw);
-  transition: .3s ease-in-out;
+  transition-duration:1s;
+  transition-timing-function:ease-in-out;
   z-index: 1;
 }
 
